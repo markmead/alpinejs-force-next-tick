@@ -1,0 +1,1 @@
+function r(t){t.magic("forceNextTick",()=>e=>e&&typeof e=="function"?requestAnimationFrame(()=>requestAnimationFrame(e)):new Promise(i=>requestAnimationFrame(()=>requestAnimationFrame(i))))}var m=r;export{m as default};

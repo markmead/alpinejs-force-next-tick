@@ -8,7 +8,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script defer src="./dist/FILE.min.js"></script>
+    <script defer src="./dist/force-next-tick.min.js"></script>
 
     <script
       defer
@@ -16,5 +16,14 @@
     ></script>
   </head>
 
-  <body> </body>
+  <body x-data="{ firstName: 'John' }">
+    <button
+      @click="
+      firstName = 'Jane'
+      $forceNextTick(() => console.log($el.innerText))
+    "
+      x-text="firstName"
+    >
+    </button>
+  </body>
 </html>

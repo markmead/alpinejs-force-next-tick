@@ -1,15 +1,15 @@
 {
-  "name": "PLUGIN",
+  "name": "alpinejs-force-next-tick",
   "version": "1.0.0",
-  "description": "DESCRIPTION",
+  "description": "Alpine JS implementation of the double `requestAnimationFrame` method to force`$nextTick`",
   "keywords": [
     "Alpine",
     "Alpine JS",
     "Alpine JS Plugin",
     "Alpine JS Plugins"
   ],
-  "module": "dist/FILE.esm.js",
-  "unpkg": "dist/FILE.min.js",
+  "module": "dist/force-next-tick.esm.js",
+  "unpkg": "dist/force-next-tick.min.js",
   "scripts": {
     "build": "node scripts/build.js"
   },

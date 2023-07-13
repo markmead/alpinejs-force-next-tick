@@ -1,8 +1,13 @@
 export default function (Alpine) {
-  Alpine.directive(
-    '[name]',
-    (el, { value, modifiers, expression }, { Alpine, effect, cleanup }) => {}
-  )
+  Alpine.magic('forceNextTick', () => (methodCallback) => {
+    const hasCallback = methodCallback && typeof methodCallback === 'function'
 
-  Alpine.magic('[name]', (el, { Alpine }) => {})
+    if (hasCallback) {
+      return requestAnimationFrame(() => requestAnimationFrame(methodCallback))
+    }
+
+    return new Promise((newPromise) =>
+      requestAnimationFrame(() => requestAnimationFrame(newPromise))
+    )
+  })
 }
