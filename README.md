@@ -43,7 +43,7 @@ Alpine.start()
 ## Example
 
 It works the same way as Alpine JS `$nextTick` but uses the double
-`requestAnimationFrame` method.
+`requestAnimationFrame` method - https://alpinejs.dev/magics/nextTick
 
 ```html
 <body x-data="{ firstName: 'John' }">
