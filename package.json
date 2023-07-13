@@ -1,6 +1,6 @@
 {
   "name": "alpinejs-force-next-tick",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alpine JS implementation of the double `requestAnimationFrame` method to force`$nextTick`",
   "keywords": [
     "Alpine",
