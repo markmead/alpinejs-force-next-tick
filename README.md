@@ -1,7 +1,7 @@
 # Alpine JS Force `$nextTick`
 
-Alpine JS implementation of the double `requestAnimationFrame` method to
-force`$nextTick`
+Alpine JS implementation of the double `requestAnimationFrame` method to force
+`$nextTick`
 
 ---
 
